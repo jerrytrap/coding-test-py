@@ -103,3 +103,30 @@ def deleteNode(deleteData):
             parent = current
             current = current.right
 
+
+# 전위 순회
+def preorder(node):
+    if node == None:
+        return
+    print(node.data)
+    preorder(node.left)
+    preorder(node.right)
+
+
+# 중위 순회
+def inorder(node):
+    if node == None:
+        return
+    preorder(node.left)
+    print(node.data)
+    preorder(node.right)
+
+
+# 후위 순회
+def postorder(node):
+    if node == None:
+        return
+    preorder(node.left)
+    preorder(node.right)
+    print(node.data)
+
