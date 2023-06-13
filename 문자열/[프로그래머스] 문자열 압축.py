@@ -14,7 +14,7 @@ def solution(s):
             if substr == compare:
                 cnt += 1
 
-            # 다를 경우 확인할 문자열과 카운트를 더함 (카운트가 2 이상일 때만)
+            # 다를 경우 확인할 문자열의 길이를 더하고, 카운트가 2 이상인 경우 카운트를 더해줌
             else:
                 compressed += str(cnt) + compare if cnt >= 2 else compare
 
